@@ -143,11 +143,11 @@
             <label for="reinput-password">请重复输入密码：</label>
             <input type="password" name="reinput-password" id="reinput-password" placeholder="这是一个文本输入框">
             <p>密码请为6-16位英文数字</p>
-            <label for="gender">性别：</label>
+            <label for="gender">性别：</label><!-- 报错-->
             <input type="radio" name="gender" id="" value="男" checked="checked">男
             <input type="radio" name="gender" id="" value="女">女
             <label for="city">城市：</label>
-            <select name="city">
+            <select name="city"><!-- 写name相关联的label报错了 -->
                 <option value="北京">北京</option>
                 <option value="上海">上海</option>
                 <option value="广州">广州</option>
