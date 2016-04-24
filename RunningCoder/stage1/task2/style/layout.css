@@ -130,11 +130,12 @@ aside form {
     font-size: .9em;
     margin: 10px 0;
 }
-aside form label, aside form label {
+aside form label {
     float: left;
     width: 10em;
     padding-right: 1em;
     text-align: right;
+    cursor: pointer;
 }
 aside form div {
     clear: left;
