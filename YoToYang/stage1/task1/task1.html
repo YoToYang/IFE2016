@@ -19,6 +19,7 @@
             <dd>更容易让屏幕阅读器读出网页内容</dd>
         </dl>
     </header>
+    
     <nav>
         <ul>
             <li><a href="#">导航链接一</a></li>
@@ -27,52 +28,72 @@
             <li><a href="#">导航链接四</a></li>
         </ul>
     </nav>
-    <article>
-        <h2>文章一级标题</h2>
-        <h2>文章二级标题(这样的大小能算作二级吗)</h2>
-        <p>文章作者(这里最开始用了span，但是觉得span一般使用在p里对行内元素进行组合，不符合语义）&nbsp;(空格用了实体表示)文章发表时间</p>
-        <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，下面换行了</p>
-        <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="#">这里是一个超链接</a> 这是一个很长很长的段落，<b>这是一个粗体，仅仅是粗体，无功能，b</b>这是一个很长很长的段落，这是一个很长很长的段落，下面换行了</p>
-        <h2>另一篇文章一级标题</h2>
-        <h2>另一篇文章二级标题</h2>
-        <p>文章作者&nbsp;文章发表时间</p>
-        <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，下面换行了</p>
-        <p>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个需要强调的信息</strong>这是一个很长很长的段落，<abbr title="hypertext markup language">表示是HTML缩写，移入鼠标有解释</abbr> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，下面换行了</p>
-        <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
-        <p>图片的alt，可以做结构优化</p>
-    </article>
-    <ul>
+    
+    <section><!--用于划分页面不区域，一般用来代替div -->
+        <article>
+            <h1>文章一级标题</h1>
+            <h2>文章二级标题(这样的大小能算作二级吗)</h2>
+            <span>文章作者</span>&nbsp;<time datetime="2008-02-14">文章发表时间,属性datetime用于表示某个日资具体时间</time>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，下面换行了</p>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="#">这里是一个超链接</a> 这是一个很长很长的段落，<b>这是一个粗体，仅仅是粗体，无功能，b</b>这是一个很长很长的段落，这是一个很长很长的段落，下面换行了</p>
+        </article> 
+        <article>
+            <h2>另一篇文章一级标题</h2>
+            <h2>另一篇文章二级标题</h2>
+            <span>文章作者</span>&nbsp;<time datetime="2008-02-14">文章发表时间</time>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，下面换行了</p>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个需要强调的信息</strong>这是一个很长很长的段落，<abbr title="hypertext markup language">表示是HTML缩写，移入鼠标有解释</abbr> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，下面换行了</p>
+            <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
+            <p>图片的alt，可以做结构优化</p>
+            <ul>
         <li>列表项目一</li>
         <li>列表项目二</li>
         <li>列表项目三</li>
     </ul>
-    <h2>图片</h2>
-    <figure>
-        <figcaption>好看的图片</figcaption>
-        <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
-    </figure>
-    <figure>
-        <figcaption>好看的图片</figcaption>
-        <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
-    </figure>
-    <figure>
-        <figcaption>好看的图片</figcaption>
-        <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
-    </figure>
-    <figure>
-        <figcaption>好看的图片</figcaption>
-        <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
-    </figure>
-    <article>
-        <h2>最后一篇文章的一级标题</h2>
-        <h2>最后一篇文章的二级标题</h2>
-        <p>文章作者&nbsp;文章发表时间</p>
-    </article>
-    <ol>
-        <li>排名1</li>
-        <li>排名2</li>
-        <li>排名3</li>
-    </ol>
+        </article>
+    </section>
+    
+    <section>
+        <dl>
+        <dt>图片</dt>
+        <dd>
+            <figure>
+                <figcaption><a href="#" >好看的图片</a></figcaption><!--一般都是可以查看的 -->
+                <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
+            </figure>
+        </dd>
+        <dd>
+            <figure>
+                <figcaption><a href="#" >好看的图片</a></figcaption>
+                <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
+            </figure>
+        </dd>
+        <dd>
+            <figure>
+                <figcaption><a href="#" >好看的图片</a></figcaption>
+                <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
+            </figure>
+        </dd>
+        <dd>
+            <figure>
+                <figcaption><a href="#" >好看的图片</a></figcaption>
+                <img src="http://img1.gtimg.com/15/1588/158840/15884086_small.jpg" alt="草泥马">
+            </figure>
+        </dd>
+        </dl>
+    </section>
+    <section>
+        <article>
+            <h2>最后一篇文章的一级标题</h2>
+            <h2>最后一篇文章的二级标题</h2>
+            <span>文章作者</span>&nbsp;<time datetime="2008-02-14">文章发表时间</time>
+        </article>
+        <ol>
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+    </section>
     <table>
         <caption>这里是表格标题,下面是一个表格，给表格加了一个border ="1",好让你看出是表格</caption>
         <thead>
@@ -114,26 +135,37 @@
     <aside>
         <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
         <h2>侧栏注册窗口标题</h2>
-        <form>
-            请输入邮箱地址:<input type="email" placeholder="请输入邮箱地址">
+        <form action="http://baidu.com" method="post">
+            <label for="email"> 请输入邮箱地址:</label>
+            <input type="email" name="email" id="email"placeholder="请输入邮箱地址">
             <p>邮箱地址请按照要求格式输入</p>
-            请输入密码：<input type="password">
-            请重复输入密码：<input type="password">
+            
+            <label for="password1"> 请输入密码:</label>
+            <input type="password" name="password1" id="password1">
+            <label for="password2"> 请重复输入密码:</label>
+            <input type="password" name="password2" id="password2">
             <p>密码请为6-16位英文数字</p>
-            性别：<input type="radio" name="sex" id="sexa"checked><label for="sexa">男</label>
-            <input type="radio" name="sex" id="sexb"><label for="sexb">女</label>
-            城市：
-            <select>
+            
+            <label for="gender"> 性别:</label>
+            <input type="radio" name="gender" id="male" checked><label for="male">男</label>
+            <input type="radio" name="gender" id="female"><label for="female">女</label>
+            
+            <label for="city">城市：</label>
+            <select name="city">
                 <option>北京</option>
                 <option>上海</option>
                 <option>杭州</option>
             </select>
-            爱好：
-            <input type="checkbox">运动
-            <input type="checkbox">艺术
-            <input type="checkbox">科学
-            个人描述：<textarea></textarea>
-            <input type="submit" value="确认提交">
+            
+            <label for="interesting">爱好：</label>
+            <input type="checkbox" name="interesting">运动
+            <input type="checkbox" name="interesting">艺术
+            <input type="checkbox" name="interesting">科学
+            
+            <label for="profile">个人描述：</label>
+            <textarea name="profile" rows="2" cols="24">这是一个多行输入框，请输入您的个人描述</textarea>
+            
+            <button type="submit">确认提交</button>
         </form>
     </aside>
     <footer>版权所有&copy;</footer>
