@@ -22,14 +22,14 @@ header {
 }
 .navbar-footer li {
     float: left;
-}
+}/* 那个点不是说一般都不是li的原样式吗 */
 ul:after {
     display: block;
     clear: both;
     content: ' ';
-}
+}/*我一般是直接把这个提出来单独写一个清浮动的class */
 .navbar-footer li a {
-    font: 20px;
+    font: 20px;/* 规范规范 = =是啥写啥 = = */
     line-height: 1;
     padding: 10px 25px 10px 0;
     text-decoration: none;
@@ -53,7 +53,7 @@ article p {
 }
 article h2 {
     margin: 20px 0;
-}
+}/*我直接在重置里没去掉他们。。不知道要不要严格按照上下间距量出来的值设置 */
 article > h3 {
     margin: 10px 0;
     color: #666;
@@ -73,10 +73,10 @@ article ul {
     list-style: none;
 }
 .article2 ul li {
-    margin: 10px 40px;
+    margin: 10px 40px; /* 发现我的设置。。。 */
 }
 .gallery ul li {
-    width: 180px;
+    width: 180px;/* 完全没管它的真实间距。。因为看着差不多排开了就行了。。。我是不是省略了很多。。 */
     margin: 10px 0 10px 40px;
     padding-bottom: 10px;
     text-align: center;
@@ -148,7 +148,7 @@ aside form div {
 }
 aside form div p {
     margin: 10px 0 10px 11em;
-    margin-left: 11em;
+    margin-left: 11em/*  怎么这里还重复写了，上面不是写了吗*/
     color: #a9a9a9;
 }
 aside form div textarea {
@@ -173,4 +173,4 @@ footer {
 footer p {
     font-size: 10px;
     padding: 30px 0;
-}
+}/* 我的版权所有没写。。。完全做下来发现自己差好大一截。。漏东西，观察不仔细。。。用标签乱七八糟，我今晚好好改代码，你的基本没啥可改的。 */
